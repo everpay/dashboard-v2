@@ -55,12 +55,12 @@ export default function Footer(props) {
             md: "44px",
           }}
         >
-          <Link href="https://support.everpayinc.com"
+          <Link href="https://status.everpayinc.com"
             target="_blank"
             color="gray.400">
             {document.documentElement.dir === "rtl"
-              ? "Support"
-              : "Support"}
+              ? "Status"
+              : "Status"}
           </Link>
         </ListItem>
         <ListItem
