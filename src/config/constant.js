@@ -1,1 +1,1 @@
-export const API_SERVER = "http://localhost:5000/api/";
+export const API_SERVER = "https://app.everpayinc.com:5000/api/";
