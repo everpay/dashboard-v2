@@ -31,21 +31,21 @@ export default function Footer(props) {
         <Link
           // color={linkTeal}
           color="teal.400"
-          href="https://bit.ly/3fKQZaL"
+          href="https://everpayinc.com"
           target="_blank"
         >
           {document.documentElement.dir === "rtl"
             ? " توقيت الإبداعية"
-            : "Creative Tim "}
+            : "Everpay Inc "}
         </Link>
-        {' Coded by '} 
+        {' Powered by '} 
         <Link
           // color={linkTeal}
           color="teal.400"
-          href="https://appseed.us"
+          href="https://elektropay.com"
           target="_blank"
         >
-          {document.documentElement.dir === "rtl" ? "AppSeed" : "AppSeed"}
+          {document.documentElement.dir === "rtl" ? "Elektropay" : "Elektropay"}
         </Link>
       </Text>
       <List display="flex">
@@ -55,12 +55,12 @@ export default function Footer(props) {
             md: "44px",
           }}
         >
-          <Link href="https://appseed.us/product/node-js-react-purity-dashboard"
+          <Link href="https://support.everpayinc.com"
             target="_blank"
             color="gray.400">
             {document.documentElement.dir === "rtl"
-              ? "Product"
-              : "Product"}
+              ? "Support"
+              : "Support"}
           </Link>
         </ListItem>
         <ListItem
@@ -71,7 +71,7 @@ export default function Footer(props) {
         >
           <Link color="gray.400"
             target="_blank"
-            href="https://appseed.us/support">
+            href="https://support.everpayinc.com">
             {document.documentElement.dir === "rtl" ? "Support" : "Support"}
           </Link>
         </ListItem>
