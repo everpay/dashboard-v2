@@ -2,11 +2,9 @@
 import { Box, ChakraProvider, Portal } from "@chakra-ui/react";
 import Footer from "components/Footer/Footer.js";
 // core components
-import AuthNavbar from "components/Navbars/AuthNavbar.js";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes.js";
-import theme from "theme/theme.js";
 
 export default function Pages(props) {
   const { ...rest } = props;
@@ -40,26 +38,7 @@ export default function Pages(props) {
     }
     return activeRoute;
   };
-  const getActiveNavbar = (routes) => {
-    let activeNavbar = false;
-    for (let i = 0; i < routes.length; i++) {
-      if (routes[i].category) {
-        let categoryActiveNavbar = getActiveNavbar(routes[i].views);
-        if (categoryActiveNavbar !== activeNavbar) {
-          return categoryActiveNavbar;
-        }
-      } else {
-        if (
-          window.location.href.indexOf(routes[i].layout + routes[i].path) !== -1
-        ) {
-          if (routes[i].secondaryNavbar) {
-            return routes[i].secondaryNavbar;
-          }
-        }
-      }
-    }
-    return activeNavbar;
-  };
+  
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.collapse) {
@@ -86,12 +65,7 @@ export default function Pages(props) {
   return (
     <ChakraProvider theme={theme} resetCss={false} w="100%">
       <Box ref={navRef} w="100%">
-        <Portal containerRef={navRef}>
-          <AuthNavbar
-            secondary={getActiveNavbar(routes)}
-            logoText="PURITY UI DASHBOARD"
-          />
-        </Portal>
+      
         <Box w="100%">
           <Box ref={wrapper} w="100%">
             <Switch>
