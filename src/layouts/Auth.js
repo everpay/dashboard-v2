@@ -5,6 +5,7 @@ import Footer from "components/Footer/Footer.js";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes.js";
+import theme from "theme/theme.js";
 
 export default function Pages(props) {
   const { ...rest } = props;
