@@ -221,8 +221,8 @@ function SignIn() {
                 maxW="100%"
                 mt="0px"
               >
-                <Text color={textColor} fontWeight="medium">
-                  Open-source Full-Stack Seed Project 
+                <Text color={textColor} fontWeight="normal" fontSize="9px">
+                  © 2022 Everpay Inc.
                 </Text>
               </Flex>
             </Flex>
